@@ -1,0 +1,9 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - net.bartoszciosek.HttpKt.configureHttp
+      - net.bartoszciosek.SerializationKt.configureSerialization
+      - net.bartoszciosek.RpcKt.configureRpc
+      - net.bartoszciosek.RoutingKt.configureRouting
